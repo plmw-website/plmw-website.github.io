@@ -59,14 +59,14 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   anchor.addEventListener('mouseover', function (e) {
     setMascotImage(this.getAttribute('href').substring(1));
   });
-  // set mascot image back to current section on mouseout
-  anchor.addEventListener('mouseout', function (e) {
-    updateActiveNavItem();
-  });
+});
+
+// on nav mouseout, set mascot image based on current section
+document.querySelector('nav').addEventListener('mouseout', function (e) {
+  updateActiveNavItem();
 });
 
 // preload all mascot images
-
 document.querySelectorAll('nav ul li a').forEach(anchor => {
   let img = new Image();
   img.src = `images/mascots/${anchor.getAttribute('href').substring(1)}.avif`;

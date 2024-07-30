@@ -31,7 +31,6 @@ body {
 header {
   background-color: var(--primary-color);
   color: var(--bg-color);
-  padding: 1rem 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -39,14 +38,21 @@ header {
   height: var(--header-height);
 }
 
+nav {
+  /* height: 100%; */
+  /* border: 1px solid red; */
+}
+
 nav ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  /* set spacing between items to zero */
+
 }
 
 nav ul li {
-  margin: 0 1rem;
+  height: var(--header-height);
 }
 
 nav ul li a {
@@ -54,6 +60,12 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
+  display: block;
+  height: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
 }
 
 nav ul li a:hover {
@@ -81,7 +93,7 @@ nav #mascot {
   background-clip: border-box; /* Clipping to border box */
   object-fit: cover; /* Scale to fit the element */
   /* border: 1px solid black; */
-  translate: 0px -15px;
+  /* translate: 0px -15px; */
   transition: background-image 0.3s ease;
 }
 
