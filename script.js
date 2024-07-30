@@ -59,6 +59,10 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   anchor.addEventListener('mouseover', function (e) {
     setMascotImage(this.getAttribute('href').substring(1));
   });
+  // set mascot image back to current section on mouseout
+  anchor.addEventListener('mouseout', function (e) {
+    updateActiveNavItem();
+  });
 });
 
 // preload all mascot images
