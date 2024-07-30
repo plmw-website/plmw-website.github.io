@@ -201,6 +201,11 @@ footer {
     align-items: center;
   }
 
+  nav #mascot {
+    margin: 10px;
+    margin-top: 25px;
+  }
+
   nav ul li {
     margin: 0.5rem 0;
   }
