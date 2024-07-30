@@ -247,7 +247,7 @@ footer {
 
 @media screen and (min-width: 1600px) {
   .quotes-grid {
-    column-count: 3;
+    column-count: 2;
   }
 }
 
