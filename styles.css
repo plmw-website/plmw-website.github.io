@@ -53,6 +53,8 @@ nav ul {
 
 nav ul li {
   height: var(--header-height);
+  display: flex;
+  align-items: center;
 }
 
 nav ul li a {
