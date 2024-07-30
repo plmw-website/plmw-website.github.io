@@ -72,7 +72,7 @@ nav {
 
 nav #mascot {
   color: transparent;
-  background-image: url('images/mascot.png');
+  background-image: url('images/mascots/about.avif');
   width: 100px;
   height: 100px;
   background-size: 100px 100px;
@@ -84,11 +84,6 @@ nav #mascot {
   translate: 0px -15px;
 }
 
-nav #mascot:hover, #plmwlink:hover ~ #mascot {
-  background-image: url('images/mascot-pi.png');
-  /* background-size: 142px 130px; */
-  /* border: 1px solid black; */
-}
 
 /* Main content */
 main {

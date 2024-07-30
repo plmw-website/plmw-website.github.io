@@ -1,17 +1,28 @@
+function setMascotImage(name) {
+  let mascot = document.getElementById('mascot');
+  let imgurl = `url('images/mascots/${name}.avif')`;
+  mascot.style.backgroundImage = imgurl;
+}
+
 // Function to update active nav item
 function updateActiveNavItem() {
-  const sections = document.querySelectorAll('section');
+  const sections = document.querySelectorAll('section, body');
   const navItems = document.querySelectorAll('nav ul li a');
 
-  let currentSectionId = '';
+  let currentSectionId = 'about';
+  let minDist = 99999;
 
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100; // Adjust this value based on your header height
+    const sectionTop = section.offsetTop; // Adjust this value based on your header height
     const sectionHeight = section.clientHeight;
-    if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+    let dist = (window.scrollY + window.innerHeight*0.2) - sectionTop;
+    if(dist > 0 && dist < minDist) {
+      minDist = dist;
       currentSectionId = section.id;
     }
   });
+
+  console.log(currentSectionId)
 
   navItems.forEach(item => {
     item.classList.remove('active');
@@ -19,6 +30,9 @@ function updateActiveNavItem() {
       item.classList.add('active');
     }
   });
+
+  // set mascot image based on current section
+  setMascotImage(currentSectionId);
 }
 
 // Update active nav item on scroll
@@ -38,4 +52,18 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     // Set the URL hash
     window.location.hash = this.getAttribute('href');
   });
+});
+
+// add hover actions to the links to set the mascot image
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+  anchor.addEventListener('mouseover', function (e) {
+    setMascotImage(this.getAttribute('href').substring(1));
+  });
+});
+
+// preload all mascot images
+
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+  let img = new Image();
+  img.src = `images/mascots/${anchor.getAttribute('href').substring(1)}.avif`;
 });
