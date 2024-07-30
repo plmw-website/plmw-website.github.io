@@ -82,6 +82,7 @@ nav #mascot {
   object-fit: cover; /* Scale to fit the element */
   /* border: 1px solid black; */
   translate: 0px -15px;
+  transition: background-image 0.3s ease;
 }
 
 
