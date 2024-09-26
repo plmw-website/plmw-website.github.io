@@ -110,7 +110,8 @@
 
 
             <p>
-            <h2>FAQ</h2>
+            <h2><a href="javascript: document.getElementById('faq').classList.toggle('hide')">FAQ</a></h2>
+            <div id="faq" class="hide">
             <p>
                 <b>I'm not from a famous university. Can I still get funding?</b>
                 Absolutely! We want to encourage students from all backgrounds to attend PLMW. We have a limited number of travel grants available for students who need financial support, and we prioritize students who would not otherwise be able to attend the conference.
@@ -157,6 +158,7 @@
 
                 <b>What should I bring to PLMW?</b>
                 You do not need to bring anything to PLMW. If you want to take notes, you can bring a pen and notebook if you like, but you can also get those from the sponsor booths at the conference.
+            </div>
         </section>
 
         <section id="experiences">
@@ -255,7 +257,7 @@
             </ul>
 
             <p></p>
-            <a href="#past" onclick="document.getElementById('past').classList.toggle('hide'); return false">Past PLMWs</a>
+            <a href="javascript: document.getElementById('past').classList.toggle('hide')">Past PLMWs</a>
             <ul id="past" class="hide">
                 <li><a href="https://popl23.sigplan.org/home/PLMW-POPL-2023">PLMW @ POPL’23</a></li>
                 <li><a href="https://2022.splashcon.org/track/splash-2022-PLMW">PLMW @ SPLASH ‘22</a></li>
