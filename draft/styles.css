@@ -70,8 +70,9 @@ header {
 }
 
 .brand-link:hover .brand-mark {
-  transform: translateY(-1px);
+  transform: none;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.18);
+  background: linear-gradient(130deg, #141c2d, #24324a);
 }
 
 .brand-mark {
