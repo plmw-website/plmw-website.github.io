@@ -505,6 +505,7 @@ figcaption img {
   color: var(--primary-color);
   text-align: center;
   line-height: 1.2;
+  text-decoration: none;
 }
 
 .sponsor-logos a:hover img {
