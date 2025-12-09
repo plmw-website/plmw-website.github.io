@@ -154,6 +154,14 @@ p {
   margin-bottom: 1rem;
 }
 
+section li {
+  margin-left: 2em;
+}
+
+section ul {
+  margin-bottom: 0.5em;
+}
+
 /* Footer */
 footer {
   /* background-color: var(--primary-color); */
@@ -197,7 +205,8 @@ footer {
 }
 
 .card li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
+  margin-left: 0em;
 }
 
 .card a {
