@@ -11,89 +11,99 @@
 
 <body id="about">
   <header>
-    <nav>
-      <a id="mascot" href="#about">PLMW</a>
-      <ul>
-        <li><a href="#about">PLMW</a></li>
-        <li><a href="#experiences">Student experiences</a></li>
-        <li><a href="#upcoming">Upcoming PLMWs</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>(draft website)</li>
+    <nav class="top-nav">
+      <a class="brand brand-link" href="#about">
+        <span class="brand-mark">PLMW</span>
+        <div class="brand-text">
+          <span class="brand-title">Programming Languages Mentoring Workshop</span>
+          <span class="brand-subtitle">ACM SIGPLAN</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li class="link-pair">
+          <a href="#upcoming">Events</a>
+          <a href="#experiences">Stories</a>
+        </li>
+        <li class="link-pair">
+          <a href="#sponsors">Sponsors</a>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
+      <a class="button nav-cta" href="#upcoming">Apply</a>
     </nav>
   </header>
 
   <main>
-    <section id="about">
-      <h1>ACM SIGPLAN Programming Languages Mentoring Workshop</h1>
-      <div class="card-container">
-        <div class="card">
-          <a href="#what">
-            <h3>What is PLMW?</h3>
-            <p>A workshop designed to encourage and prepare students for research careers in programming languages, with:</p>
-            <ul>
-              <li><b>Expert speakers</b></li>
-              <li><b>Networking opportunities</b></li>
-              <li><b>Career guidance</b></li>
-            </ul>
-            PLMW prepares you and helps you get the most out of the main conference.
-          </a>
+    <section id="about" class="hero-section">
+      <div class="hero-layout">
+        <div class="hero-text">
+          <p class="eyebrow">Mentoring for future programming languages researchers</p>
+          <h1>ACM SIGPLAN Programming Languages Mentoring Workshop</h1>
+          <p class="lead">A one-day workshop that helps students navigate programming languages research, meet mentors, and step confidently into the collocated conference.</p>
+          <div class="pill-row">
+            <span class="pill">Expert speakers</span>
+            <span class="pill">Networking &amp; mentoring</span>
+            <span class="pill">Conference preparation</span>
+            <span class="pill">Financial support</span>
+          </div>
         </div>
-        <div class="card">
-          <a href="#who">
-            <h3>Who is PLMW for?</h3>
-            <p>PLMW is for everyone who is interested in a PhD in programming languages, and open to students from all around the world, from undergraduates to PhD students.</p>
-            <p><b>Our sponsors provide financial support for a number of students.</b></p>
-          </a>
-        </div>
-        <div class="card">
-          <a href="#conf">
-            <h3>The collocated conference</h3>
-            <p>PLMW includes entry to a collocated programming languages research conference (POPL, PLDI, ICFP, or SPLASH).</p>
-            <p><b>You'll see presentations of new research and meet researchers in the field.</b></p>
-          </a>
+      <div class="hero-panel">
+        <div class="panel-title">What you can expect</div>
+        <ul class="stat-list">
+          <li>
+            <strong>Conference-ready</strong>
+              <span>Guidance on getting the most out of POPL, PLDI, ICFP, or SPLASH.</span>
+            </li>
+            <li>
+              <strong>Personal mentoring</strong>
+              <span>Small-group conversations and Q&amp;A with researchers.</span>
+            </li>
+            <li>
+              <strong>Technical content</strong>
+              <span>Introductory PL research talks, deep dives, and panels to help you follow the main conference.</span>
+            </li>
+            <li>
+              <strong>Inclusive community</strong>
+              <span>Meet students from around the world who share your interests.</span>
+            </li>
+            <li>
+              <strong>Travel grants</strong>
+              <span>Support from our sponsors for many attendees.</span>
+            </li>
+          </ul>
         </div>
       </div>
-      <br>
-        <center>
-          <p><a class="button" href="#upcoming">Apply to attend an upcoming PLMW »</a></p>
-        </center>
-      <h2 id="what">What is PLMW?</h2>
-      <p>PLMW is a one-day workshop for students who are considering a PhD in programming languages, or have just started one.
-      The workshop consists of</p>
+      <div class="video-heading">
+        <h2>Talks from previous PLMWs</h2>
+        <p class="video-subhead">Past PLMW sessions to give you a feel for the content and format.</p>
+      </div>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/gfFFBdbcLr4?si=5BP2YVxcU_YJr_eg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/XpgJ31GKPWI?si=RVRzXHAaj776ho1C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/sQqNpV6krno?si=4ka93n2V76wiVQO2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <h2 id="what">What you’ll experience at PLMW</h2>
+      <p>PLMW is a one-day workshop for students considering or starting a PhD in programming languages. The day is built to help you arrive prepared, confident, and connected.</p>
       <ul>
-        <li><b>Preparation for attending the main conference</b>, where speakers give advice on how to get the most out of the main conference</li>
-        <li><b>Introduction to programming languages research</b>, where experts introduce the field of programming languages research</li>
-        <li><b>Technical talks</b>, where experts introduces their research area</li>
-        <li><b>Soft skills talks</b>, where experts give advice on how to succeed in graduate school and research</li>
-        <li><b>Panel discussions</b>, where researchers discuss their experiences and answer questions</li>
-        <li><b>Mentoring sessions</b>, where students can meet and talk with established researchers in the field in small groups</li>
-        <li><b>Social events</b>, where students can meet other students and researchers, such as during lunch</li>
+        <li><b>Conference preparation</b>: how to get the most from the collocated conference</li>
+        <li><b>Programming languages research primers</b> from experts</li>
+        <li><b>Technical talks</b> introducing current research areas</li>
+        <li><b>Soft-skills sessions</b> on thriving in grad school and research</li>
+        <li><b>Panels and Q&amp;A</b> with researchers</li>
+        <li><b>Small-group mentoring</b> with established researchers</li>
+        <li><b>Social time</b> to meet fellow students and mentors</li>
       </ul>
-      <p>
-      <b>Here are some talks from previous PLMWs</b>
-      (<a href="https://www.youtube.com/@acmsigplan/search?query=plmw">and many more</a>)
-      </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/gfFFBdbcLr4?si=5BP2YVxcU_YJr_eg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/XpgJ31GKPWI?si=RVRzXHAaj776ho1C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/sQqNpV6krno?si=4ka93n2V76wiVQO2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
       <h2 id="who">Who can attend?</h2>
-      <p>PLMW is open to students from all around the world, from undergraduates to PhD students, who are interested in programming languages.</p>
+      <p>PLMW is open to students worldwide, from undergraduates to PhD students, who are interested in programming languages.</p>
       <ul>
-        <li><b>If you don't know if you want to do a PhD in programming languages</b>, then PLMW may help you decide whether that's for you.</li>
-        <li><b>If you want to do a PhD in programming languages</b>, then PLMW may help you identify the right PhD program and advisor.</li>
-        <li><b>If you have just started a PhD in programming languages</b>, then PLMW may help you get started on the right foot.</li>
+        <li>Exploring whether a PL PhD is for you</li>
+        <li>Planning a PL PhD and looking for the right fit</li>
+        <li>Early in a PL PhD and eager to start strong</li>
       </ul>
-      <p>
-      Our sponsors provide financial support for a number of students. Financial support typically covers the cost of economy travel (up to a fixed amount, depending on distance), registration (1 day PLMW + 3 days of main conference), hotel (5 days), lunches and coffee breaks at the conference, but no other meals.</p>
-
-      <center>
-        <p><a class="button" href="#upcoming">Apply to attend an upcoming PLMW »</a></p>
-      </center>
-
-      <h2 id="conf">The collocated conference</h2>
+      <p>Our sponsors provide financial support for many students: economy travel (up to a distance-based cap), 1 day of PLMW + 3 days of the main conference registration, 5 hotel nights, and conference lunches and coffee breaks.</p>
+      <h2 id="conf">Conference access included</h2>
       <p>PLMW includes entry to a collocated ACM SIGPLAN programming languages research conference:</p>
       <ul>
         <li><b>POPL</b> (Principles of Programming Languages)</li>
@@ -101,7 +111,7 @@
         <li><b>ICFP</b> (International Conference on Functional Programming)</li>
         <li><b>SPLASH</b> (Systems, Programming, Languages, and Applications: Software for Humanity)</li>
       </ul>
-      <p>At the conference, you'll see presentations of new research and you'll be able to meet researchers in the field.</p>
+      <p>You’ll see new research presented, meet researchers in the field, and put your PLMW preparation into practice.</p>
 
       <h2><a href="" onclick="document.getElementById('faq').classList.toggle('hide'); return false">FAQ</a></h2>
       <div id="faq">
@@ -123,7 +133,7 @@
       <p>
         <b>Will there be an exam?</b>
         No! PLMW is not a course, and there are no exams. The goal of the workshop is to introduce you to new ideas and help you prepare for a career in programming languages research. There are no grades, and you don't need to have any prior knowledge to attend.
-      <p>
+      </p>
 
       <p>
         <b>Who can participate in PLMW?</b>
@@ -171,102 +181,34 @@
       <script>document.getElementById('faq').classList.toggle('hide')</script>
     </section>
 
-    <section id="experiences">
-      <h2>Student experiences</h2>
-      <div class="quotes-grid">
-        <figure class="quote-container">
-          <blockquote class="quote-text">
-            <p>
-              I attended my first PLMW in 2017, having previously taken one programming languages course. I definitely did not understand most of the technical talks given at PLMW. However, since the talks introduced different areas of research, I felt much more prepared for the ICFP research talks. I also met many of my current friends in my peer group at PLMW; friends I still see today at various conferences.
-            </p>
-            <p>
-              My experience at PLMW greatly influenced my path since then. I've attended every ICFP since 2017 and gave a talk at the co-located Scheme Workshop in 2019. The talk I gave was better because of the helpful tips from Derek Dreyer's talk during my first PLMW. I also applied to graduate school with a special interest in compiler correctness because of Amal Ahmed's talk during this same PLMW. I am currently finishing my first year of my Master's/PhD program researching type preserving compilation because of PLMW (and ICFP in general, as I met my current advisor at ICFP 2018).
-            </p>
-          </blockquote>
-          <figcaption class="quote-author">
-            — Paulette Koronkevich, graduate student, University of British Columbia
-            <img src="images/paulette.png" alt="Name of the person" class="quote-image">
-          </figcaption>
-        </figure>
-        <figure class="quote-container">
-          <blockquote class="quote-text">
-            <p>
-              PLMW changed my life and my career trajectory. I honestly applied to POPL on a whim one year because I was working a low-wage job in Los Angeles (where POPL was being held) and being a PhD student volunteer was the only way I could afford to attend. ACM conferences can be expensive. It was only after volunteering at that conference and talking to Ranjit Jhala that I had it in my head that I might pursue a PhD. But in what, and how? And no one I work with has a PhD or gone to grad school for Computer Science, much less PL. This is where PLMW came in. Almost immediately, I met someone who had not only travelled a similar path, but openly engaged with me, and others who told me to follow up with them for help and mentorship applying to schools. Others I met even encouraged me to submit a paper or collaborate on a research paper with them. I had never written a single research paper before. I went from Pallet Jacks and helping 53 foot trucks back into a facility, hearing the sound of welding and machining all day, while sitting at a computer trying out small programmes in LISP, to being a fully-funded PhD student within a year. I owe a lot of that to PLMW.
-            </p>
-          </blockquote>
-          <figcaption class="quote-author">
-            — Krystal Maughan, PhD student, University of Vermont
-            <img src="images/kammitama.jpg" alt="Name of the person" class="quote-image">
-          </figcaption>
-        </figure>
-        <figure class="quote-container">
-          <blockquote class="quote-text">
-            <p>
-              I went to PLMW at the end of my 5-year degree in mathematics and computer science, at the time when I was pondering whether academia — and more concretely PL — was for me. It helped me fight my biggest two fears at that moment: is there a good "vibe"? is PL a narrow topic? I was surprised about the breadth of PL as an area and the many relations to other disciplines. But even more about how accessible and open everybody was, not only at PLMW itself, but at the rest of the conference afterwards.
-            </p>
-          </blockquote>
-          <figcaption class="quote-author">
-            — Alejandro Serrano, senior software engineer, 47 Degrees
-            <img src="images/alejandro.png" alt="Name of the person" class="quote-image">
-          </figcaption>
-        </figure>
-        <figure class="quote-container">
-          <blockquote class="quote-text">
-            <p>
-              Virtual PLDI 2020 gave me a chance to attend PLMW for the first time. For a first-timer like myself, it was incredibly enlightening to see how experienced people in the PL field were sharing their research experience and other stories of building their (research) career in non-technical, everyday English during PLMW mentoring sessions. I highly recommend PLMW to anyone who is not sure where and how to begin research in the PL field, or how to prepare for their graduate program and/or research career. Speakers and mentors you will come across via PLMW are truly inspiring and very much willing to address any of your questions or concerns. I've been very happy to be left with actionable information and a long to-do list!
-            </p>
-          </blockquote>
-          <figcaption class="quote-author">
-            — Yunjeong Lee, incoming Ph.D. student, National University of Singapore
-            <img src="images/yunjeong.png" alt="Name of the person" class="quote-image">
-          </figcaption>
-        </figure>
-        <figure class="quote-container">
-          <blockquote class="quote-text">
-            <p>
-              I went to ICFP in St. Louis (2018) funded by PLMW. That was my first time attending a conference, ever, so I wasn't entirely sure what to expect. Surprise! It was GREAT!! Honestly there were so many highlights but the biggest thing for me was finally realizing that there's a whole community out there of like-minded folks who are all very excited about PL, but everyone in their own unique way. It's really cool to find out that folks all over the world also care about these problems, and that it's not just you and your advisor working on this niche thing. Also, some of the conversations I had with PLMW attendees have changed, and shaped my own research agenda and aspirations, so I can't emphasize enough how enriching some of those interactions were. Overall, attending PLMW helped me find my place in this community, and made me excited to continue being a part of it.
-            </p>
-          </blockquote>
-          <figcaption class="quote-author">
-            — David Justo, software engineer, Microsoft
-            <img src="images/david.png" alt="Name of the person" class="quote-image">
-          </figcaption>
-        </figure>
-        <figure class="quote-container">
-          <blockquote class="quote-text">
-            <p>
-              I attended my first PLMW at POPL 2013 in Rome. At the time, I was an undergraduate who was considering what to do next after graduation. By the time PLMW and POPL were over, I knew I wanted to pursue a PhD and for the first time, I had the confidence to believe that it might be possible.
-
-              The mentorship at PLMW was invaluable to me. For example, I did not understand most of the talks at POPL which definitely would have discouraged me if I had not learned at PLMW that this was normal for your first academic conference.
-
-              Seven years on, I have now finished my PhD and I am still in touch with some of the friends I made at PLMW.
-            </p>
-          </blockquote>
-          <figcaption class="quote-author">
-            — Heidi Howard, research fellow in computer science, University of Cambridge
-            <img src="images/heidi.png" alt="Name of the person" class="quote-image">
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
     <section id="upcoming">
-    <section id="upcoming">
-      <h2>Upcoming PLMWs</h2>
-      <p><b>To obtain more information about specific PLMWs, please check out the conference websites listed below. Applications for funding open 3-4 months before the conference, and can be found at the conference website.</b></p>
-      <ul>
-        <li><a href="https://popl26.sigplan.org/">PLMW at POPL 2026</a>
-          (Sunday 11 - Saturday 17 January 2026 in Rennes, France)</li>
-        <li><a href="https://pldi26.sigplan.org/">PLMW at PLDI 2026</a>
-          (Mon 15 - Fri 19 June 2026 Boulder, Colorado, United States)</li>
-        <li><a href="https://conf.researchr.org/home/icfp-2026">PLMW at ICFP 2026</a>
-          (Mon 24 - Sat 29 August 2026 United States)</li>
-        <li><a href="https://2026.splashcon.org/">PLMW at ICFP 2026</a>
-          (Sat 3 - Fri 9 October 2026 Oakland, California, United States)</li>
+      <h2>Upcoming PLMW Events</h2>
+      <p class="upcoming-intro"><b>Funding applications typically open 3–4 months before each conference. More details on each event will be posted on the corresponding conference website:</b></p>
+      <ul class="upcoming-list">
+        <li>
+          <a href="https://popl26.sigplan.org/">PLMW at POPL 2026</a>
+          <span>(Sunday 11 - Saturday 17 January 2026 • Rennes, France)</span>
+          <a class="apply-link" href="https://popl26.sigplan.org/home/PLMW-POPL-2026">Details »</a>
+        </li>
+        <li>
+          <a href="https://pldi26.sigplan.org/">PLMW at PLDI 2026</a>
+          <span>(Mon 15 - Fri 19 June 2026 • Boulder, Colorado, United States)</span>
+          <a class="apply-link" href="https://pldi26.sigplan.org/">Details »</a>
+        </li>
+        <li>
+          <a href="https://conf.researchr.org/home/icfp-2026">PLMW at ICFP 2026</a>
+          <span>(Mon 24 - Sat 29 August 2026 • United States)</span>
+          <a class="apply-link" href="https://conf.researchr.org/home/icfp-2026">Details »</a>
+        </li>
+        <li>
+          <a href="https://2026.splashcon.org/">PLMW at SPLASH 2026</a>
+          <span>(Sat 3 - Fri 9 October 2026 • Oakland, California, United States)</span>
+          <a class="apply-link" href="https://2026.splashcon.org/">Details »</a>
+        </li>
       </ul>
 
-      <p>
-      <a href="" onclick="document.getElementById('past').classList.toggle('hide'); return false">Past editions of PLMW</a>
+      <p class="past-toggle">
+        <a href="" onclick="document.getElementById('past').classList.toggle('hide'); return false">Show past PLMWs ▾</a>
       </p>
       <ul id="past">
         <li><a href="https://conf.researchr.org/home/icfp-splash-2025/PLMW-ICFP-SPLASH-2025">PLMW @ ICFP/SPLASH 2025</a> (Singapore)</li>
@@ -318,20 +260,97 @@
       <script>document.getElementById('past').classList.toggle('hide')</script>
     </section>
 
+    <section id="experiences">
+      <h2>Stories</h2>
+      <div class="quotes-grid">
+        <figure class="quote-container">
+          <blockquote class="quote-text">
+            <p>
+              I attended my first PLMW in 2017, having previously taken one programming languages course. I definitely did not understand most of the technical talks given at PLMW. However, since the talks introduced different areas of research, I felt much more prepared for the ICFP research talks. I also met many of my current friends in my peer group at PLMW; friends I still see today at various conferences.
+            </p>
+            <p>
+              My experience at PLMW greatly influenced my path since then. I've attended every ICFP since 2017 and gave a talk at the co-located Scheme Workshop in 2019. The talk I gave was better because of the helpful tips from Derek Dreyer's talk during my first PLMW. I also applied to graduate school with a special interest in compiler correctness because of Amal Ahmed's talk during this same PLMW. I am currently finishing my first year of my Master's/PhD program researching type preserving compilation because of PLMW (and ICFP in general, as I met my current advisor at ICFP 2018).
+            </p>
+          </blockquote>
+          <figcaption class="quote-author">
+            — Paulette Koronkevich, graduate student, University of British Columbia
+            <img src="images/paulette.png" alt="Name of the person" class="quote-image">
+          </figcaption>
+        </figure>
+        <figure class="quote-container">
+          <blockquote class="quote-text">
+            <p>
+              PLMW changed my life and my career trajectory. I honestly applied to POPL on a whim one year because I was working a low-wage job in Los Angeles (where POPL was being held) and being a PhD student volunteer was the only way I could afford to attend. ACM conferences can be expensive. It was only after volunteering at that conference and talking to Ranjit Jhala that I had it in my head that I might pursue a PhD. But in what, and how? And no one I work with has a PhD or gone to grad school for Computer Science, much less PL. This is where PLMW came in. Almost immediately, I met someone who had not only travelled a similar path, but openly engaged with me, and others who told me to follow up with them for help and mentorship applying to schools. Others I met even encouraged me to submit a paper or collaborate on a research paper with them. I had never written a single research paper before. I went from Pallet Jacks and helping 53 foot trucks back into a facility, hearing the sound of welding and machining all day, while sitting at a computer trying out small programmes in LISP, to being a fully-funded PhD student within a year. I owe a lot of that to PLMW.
+            </p>
+          </blockquote>
+          <figcaption class="quote-author">
+            — Krystal Maughan, PhD student, University of Vermont
+            <img src="images/kammitama.jpg" alt="Name of the person" class="quote-image">
+          </figcaption>
+        </figure>
+        <figure class="quote-container">
+          <blockquote class="quote-text">
+            <p>
+              I went to PLMW at the end of my 5-year degree in mathematics and computer science, at the time when I was pondering whether academia — and more concretely PL — was for me. It helped me fight my biggest two fears at that moment: is the atmosphere good? is PL a narrow topic? I was surprised about the breadth of PL as an area and the many relations to other disciplines. But even more about how accessible and open everybody was, not only at PLMW itself, but at the rest of the conference afterwards.
+            </p>
+          </blockquote>
+          <figcaption class="quote-author">
+            — Alejandro Serrano, senior software engineer, 47 Degrees
+            <img src="images/alejandro.png" alt="Name of the person" class="quote-image">
+          </figcaption>
+        </figure>
+        <figure class="quote-container">
+          <blockquote class="quote-text">
+            <p>
+              Virtual PLDI 2020 gave me a chance to attend PLMW for the first time. For a first-timer like myself, it was incredibly enlightening to see how experienced people in the PL field were sharing their research experience and other stories of building their (research) career in non-technical, everyday English during PLMW mentoring sessions. I highly recommend PLMW to anyone who is not sure where and how to begin research in the PL field, or how to prepare for their graduate program and/or research career. Speakers and mentors you will come across via PLMW are truly inspiring and very much willing to address any of your questions or concerns. I've been very happy to be left with actionable information and a long to-do list!
+            </p>
+          </blockquote>
+          <figcaption class="quote-author">
+            — Yunjeong Lee, incoming Ph.D. student, National University of Singapore
+            <img src="images/yunjeong.png" alt="Name of the person" class="quote-image">
+          </figcaption>
+        </figure>
+        <figure class="quote-container">
+          <blockquote class="quote-text">
+            <p>
+              I went to ICFP in St. Louis (2018) funded by PLMW. That was my first time attending a conference, ever, so I wasn't entirely sure what to expect. Surprise! It was GREAT!! Honestly there were so many highlights but the biggest thing for me was finally realizing that there's a whole community out there of like-minded folks who are all very excited about PL, but everyone in their own unique way. It's really cool to find out that folks all over the world also care about these problems, and that it's not just you and your advisor working on this niche thing. Also, some of the conversations I had with PLMW attendees have changed, and shaped my own research agenda and aspirations, so I can't emphasize enough how enriching some of those interactions were. Overall, attending PLMW helped me find my place in this community, and made me excited to continue being a part of it.
+            </p>
+          </blockquote>
+          <figcaption class="quote-author">
+            — David Justo, software engineer, Microsoft
+            <img src="images/david.png" alt="Name of the person" class="quote-image">
+          </figcaption>
+        </figure>
+        <figure class="quote-container">
+          <blockquote class="quote-text">
+            <p>
+              I attended my first PLMW at POPL 2013 in Rome. At the time, I was an undergraduate who was considering what to do next after graduation. By the time PLMW and POPL were over, I knew I wanted to pursue a PhD and for the first time, I had the confidence to believe that it might be possible.
+
+              The mentorship at PLMW was invaluable to me. For example, I did not understand most of the talks at POPL which definitely would have discouraged me if I had not learned at PLMW that this was normal for your first academic conference.
+
+              Seven years on, I have now finished my PhD and I am still in touch with some of the friends I made at PLMW.
+            </p>
+          </blockquote>
+          <figcaption class="quote-author">
+            — Heidi Howard, research fellow in computer science, University of Cambridge
+            <img src="images/heidi.png" alt="Name of the person" class="quote-image">
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section id="sponsors">
       <h2>Sponsors</h2>
       <p>The following sponsors have supported PLMW in 2025:</p>
-      <center>
-      <p>
-        <a href="https://nsf.org/"><img style="height: 40px" src="sponsors/nsf.svg" alt="NSF"></a>
-        <a href="https://sigplan.org/"><img style="height: 40px" src="sponsors/sigplan.svg" alt="ACM Sigplan"></a>
-        <img style="height: 40px" src="sponsors/anonymous_donor.png" alt="Anonymous donor"></a>
-        <a href="https://www.janestreet.com/"><img style="height: 40px" src="sponsors/janestreet.svg" alt="Jane Street"></a>
-        <a href="https://www.apple.com/"><img style="height: 40px" src="sponsors/apple.svg" alt="Apple"></a>
-        <a href="https://www.jetbrains.com/"><img style="height: 40px" src="sponsors/jetbrains.svg" alt="Jetbrains"></a>
-        <a href="https://aws.amazon.com/"><img style="height: 40px" src="sponsors/aws.jpg" alt="AWS"></a>
-      </p>
-      </center>
+      <div class="sponsor-logos">
+        <a href="https://nsf.org/"><img src="sponsors/nsf.svg" alt="NSF"><span>National Science Foundation</span></a>
+        <a href="https://sigplan.org/"><img src="sponsors/sigplan.svg" alt="ACM Sigplan"><span>ACM SIGPLAN</span></a>
+        <div class="sponsor-logo"><img src="sponsors/anonymous_donor.png" alt="Anonymous donor"><span>Anonymous donor</span></div>
+        <a href="https://www.janestreet.com/"><img src="sponsors/janestreet.svg" alt="Jane Street"><span>Jane Street</span></a>
+        <a href="https://www.apple.com/"><img src="sponsors/apple.svg" alt="Apple"><span>Apple</span></a>
+        <a href="https://www.jetbrains.com/"><img src="sponsors/jetbrains.svg" alt="Jetbrains"><span>JetBrains</span></a>
+        <a href="https://aws.amazon.com/"><img src="sponsors/aws.jpg" alt="AWS"><span>Amazon Web Services</span></a>
+      </div>
 
       <h2>Interested in sponsoring PLMW?</h2>
       <p>More information on the <a href="#upcoming">corresponding conference website</a>.</p>

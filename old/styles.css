@@ -1,0 +1,362 @@
+/* styles.css */
+
+:root {
+  --header-height: 60px; /* Adjust this value to match your header's actual height */
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color: #333;
+  --bg-color: #fff;
+  --card-bg-color: #f8f9fa;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: var(--header-height);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  /* shadow/glow */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header and navigation */
+header {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: var(--header-height);
+}
+
+nav {
+  /* height: 100%; */
+  /* border: 1px solid red; */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  /* set spacing between items to zero */
+
+}
+
+nav ul li {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: var(--bg-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  display: block;
+  height: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+nav ul li a.active {
+  color: var(--secondary-color);
+  /* border-bottom: 2px solid var(--secondary-color); */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav #mascot {
+  color: transparent;
+  background-image: url('images/mascots/about.avif');
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+  background-position: 0 0; /* Start from the top-left corner */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-clip: border-box; /* Clipping to border box */
+  object-fit: cover; /* Scale to fit the element */
+  /* border: 1px solid black; */
+  /* translate: 0px -15px; */
+  transition: background-image 0.3s ease;
+}
+
+
+/* Main content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: calc(var(--header-height) + 20px) 20px 20px;
+}
+
+section {
+  margin-bottom: 4rem;
+  padding: 1rem 2rem;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 100px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+section li {
+  margin-left: 2em;
+}
+
+section ul {
+  margin-bottom: 0.5em;
+}
+
+/* Footer */
+footer {
+  /* background-color: var(--primary-color); */
+  /* color: var(--bg-color); */
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Card styles */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.card ul {
+  padding-left: 1.5rem;
+}
+
+.card li {
+  margin-bottom: 0rem;
+  margin-left: 0em;
+}
+
+.card a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  :root {
+    --header-height: auto;
+  }
+
+  header {
+    position: static;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav #mascot {
+    margin: 10px;
+    margin-top: 25px;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+.quotes-grid {
+  column-gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  column-count: 2;
+}
+
+.quote-container {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+}
+
+/* Existing styles for quote-grid, blockquote, etc.
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 800px) {
+  .quotes-grid {
+    column-count: 1;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1600px) {
+  .quotes-grid {
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .quotes-grid {
+    column-count: 2;
+  }
+}
+
+blockquote {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem 2rem 1rem 2rem;
+  margin: 0 0 1rem 0;
+  /* font-size: 1.2rem; */
+  color: #333;
+  position: relative;
+  z-index: 1;
+}
+
+blockquote::before,
+blockquote::after {
+  font-size: 10rem;
+  color: rgba(0, 0, 0, 0.08);
+  position: absolute;
+  font-family: Georgia, serif;
+  line-height: 1;
+  z-index: -1;
+}
+
+blockquote::before {
+  content: '“';
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+blockquote::after {
+  content: '”';
+  bottom: -5rem;
+  right: 0.5rem;
+}
+
+blockquote p {
+  position: relative;
+  z-index: 2;
+}
+
+figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-weight: bold;
+  color: #555;
+  padding-left: 1rem;
+}
+
+figcaption img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+#sponsors img {
+  max-width: 200px;
+  max-height: 100px;
+  margin: 1rem;
+}
+
+.hide {
+  display: none;
+}
