@@ -603,7 +603,7 @@ figcaption img {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   :root {
     --header-height: 68px;
   }
@@ -641,18 +641,25 @@ figcaption img {
     font-size: 1rem;
   }
 
-  .top-nav ul {
+  .nav-links {
     order: 2;
     flex: 1 1 auto;
     width: auto;
     min-width: 0;
     margin-left: 0;
-    gap: 0.35rem;
+    display: flex;
     flex-wrap: wrap;
+    gap: 0.35rem;
     justify-content: flex-end;
   }
 
-  .top-nav ul li a {
+  .nav-links .link-pair {
+    display: inline-flex;
+    gap: 0.35rem;
+    flex: 0 0 auto;
+  }
+
+  .nav-links a {
     padding: 0.35rem 0.55rem;
     font-size: 0.95rem;
     border-radius: 9px;
